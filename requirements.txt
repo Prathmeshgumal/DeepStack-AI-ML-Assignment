@@ -1,0 +1,14 @@
+langchain
+langchain-community
+langchain-huggingface
+langchain-mistralai
+faiss-cpu
+mistralai
+python-dotenv
+spacy
+rank_bm25
+tqdm
+numpy
+sentence-transformers
+
+
