@@ -33,14 +33,6 @@ cd DeepStack_AI_Assignment
 
 Create a `.env` file in the project root directory:
 
-```bash
-# On Windows (PowerShell)
-New-Item -Path .env -ItemType File
-
-# On Linux/Mac
-touch .env
-```
-
 Add your Mistral AI API key to the `.env` file:
 
 ```env
@@ -261,20 +253,6 @@ DeepStack_AI_Assignment/
 ### Issue: Installation taking too long
 **Solution**: This is normal. Large packages like `sentence-transformers` need to download models. Use `-v` flag to see progress.
 
-### Issue: Character not found
-**Solution**: 
-- Ensure the character name matches (case-insensitive)
-- Try using the full name or checking `characters_for_testing.txt` for reference
-- Run `compute-embeddings` again if you added new stories
-
-## Testing
-
-You can test the system with characters listed in `characters_for_testing.txt`. Example:
-
-```bash
-python main.py get-character-info "Mrs Kearney"
-python main.py get-character-info "Grigory Petrov"
-```
 
 ## Additional Notes
 
@@ -282,12 +260,4 @@ python main.py get-character-info "Grigory Petrov"
 - Generated indexes are saved locally and reused until you run `compute-embeddings` again
 - Add new stories by placing `.txt` files in the `data/` directory and re-running `compute-embeddings`
 - The system handles character name variations and aliases automatically
-
-## License
-
-[Add your license information here]
-
-## Contributing
-
-[Add contribution guidelines if applicable]
 
