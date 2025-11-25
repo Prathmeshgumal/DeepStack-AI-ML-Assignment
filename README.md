@@ -122,6 +122,13 @@ This is typically handled automatically when you run the ingestion script, but y
 
 ## Usage
 
+## Alternative 
+
+Just in case you face issues with the files the raw Jupyter Notebook having the complete pipeline is also given you can refer to this notebook to see the step by step implementation process.
+
+```raw_notebook.ipynb
+```
+
 ### Command 1: Compute Embeddings (Ingest Stories)
 
 First, process all stories in the `data/` directory to create the vector database and character map:
@@ -193,36 +200,6 @@ python main.py get-character-info "Kathleen Kearney" --verbose
     "characterType": "Protagonist"
 }
 ```
-
-## Project Structure
-
-```
-DeepStack_AI_Assignment/
-│
-├── assets/
-│   └── Architecture.jpg          # System architecture diagram
-│
-├── data/                         # Story text files directory
-│   ├── a-mother.txt
-│   ├── sorrow.txt
-│   ├── the-lantern-keepers.txt
-│   ├── the-poor-relations-story.txt
-│   └── the-schoolmistress.txt
-│
-├── .env                          # Environment variables (not tracked)
-├── .gitignore                    # Git ignore rules
-├── main.py                       # CLI entry point
-├── ingest.py                     # Ingestion and indexing logic
-├── retrieve.py                   # Character retrieval and generation
-├── requirements.txt              # Python dependencies
-├── characters_for_testing.txt    # Reference characters list
-│
-└── [Generated Files]             # Created after running compute-embeddings
-    ├── story_characters.json     # Character map per story
-    ├── faiss_index/              # FAISS vector database
-    └── bm25_retriever.pkl        # BM25 retriever pickle file
-```
-
 ## How It Works
 
 1. **Ingestion Phase** (`compute-embeddings`):
