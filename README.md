@@ -124,10 +124,8 @@ This is typically handled automatically when you run the ingestion script, but y
 
 ## Alternative 
 
-Just in case you face issues with the files the raw Jupyter Notebook having the complete pipeline is also given you can refer to this notebook to see the step by step implementation process.
+Just in case you face issues with the files the raw Jupyter Notebook (raw_notebook.ipynb) having the complete pipeline is also given you can refer to this notebook to see the step by step implementation process.
 
-```raw_notebook.ipynb
-```
 
 ### Command 1: Compute Embeddings (Ingest Stories)
 
